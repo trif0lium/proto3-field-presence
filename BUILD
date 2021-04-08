@@ -20,6 +20,7 @@ nest_proto_compile(
    name = "nest",
    prefix_path = "generated",
    protos = [
+      ":common_proto",
       ":user_proto"
    ]
 )
