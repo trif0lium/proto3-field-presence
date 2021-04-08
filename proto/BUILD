@@ -2,6 +2,7 @@ proto_library(
    name = "common_proto",
    srcs = ["fs/v1/common.proto"],
    visibility = ["//visibility:public"],
+   import_prefix = "github.com/trif0lium/proto3-field-presence",
    deps = []
 )
 
