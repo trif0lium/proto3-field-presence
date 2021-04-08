@@ -20,7 +20,7 @@ nest_proto_compile_aspect = aspect(
             doc = "List of protoc plugins to apply",
             providers = [ProtoPluginInfo],
             default = [
-                Label("//build/rules:nestjs"),
+                Label("//codegen/rules:nestjs"),
             ],
         ),
         _prefix = attr.string(
@@ -50,7 +50,7 @@ _rule = rule(
         _plugins = attr.label_list(
             providers = [ProtoPluginInfo],
             default = [
-                Label("//build/rules:nestjs"),
+                Label("//codegen/rules:nestjs"),
             ],
             doc = "List of protoc plugins to apply",
         ),
