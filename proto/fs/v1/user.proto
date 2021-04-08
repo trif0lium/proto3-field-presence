@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package fs.v1.user;
 
-import "fs/v1/common.proto";
+import "github.com/trif0lium/proto3-field-presence/proto/fs/v1/common.proto";
 
 message User {
   int32 id = 1;
