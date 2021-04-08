@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message Image {
+  string uri = 1;
+}
+
+message User {
+  int32 id = 1;
+  string first_name = 2;
+  string last_name = 3;
+  string email = 4;
+  optional string nickname = 5;
+  optional string address = 6;
+  optional Image profile_picture = 7;
+}
