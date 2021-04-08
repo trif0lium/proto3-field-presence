@@ -2,5 +2,12 @@
   "name": "requirements",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.2.12",
+    "google-protobuf": "^3.16.0-rc.1",
+    "grpc-tools": "^1.11.1",
+    "grpc-web": "^1.2.1",
+    "ts-proto": "^1.79.2"
+  }
 }
