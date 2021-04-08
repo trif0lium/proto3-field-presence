@@ -1,8 +1,6 @@
 syntax = "proto3";
 
-message Image {
-  string uri = 1;
-}
+package fs.v1.user;
 
 message User {
   int32 id = 1;
@@ -11,5 +9,5 @@ message User {
   string email = 4;
   optional string nickname = 5;
   optional string address = 6;
-  optional Image profile_picture = 7;
+  optional fs.v1.common.Image profile_picture = 7;
 }
