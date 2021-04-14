@@ -29,7 +29,7 @@ load("@rules_proto_grpc//java:defs.bzl", "java_grpc_compile")
 
 java_grpc_compile(
     name = "java",
-    prefix_path = "gen",
+    prefix_path = "generated",
     protos = [
         ":common_proto",
         ":user_proto",
