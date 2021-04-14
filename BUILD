@@ -24,3 +24,14 @@ nest_proto_compile(
       ":user_proto"
    ]
 )
+
+load("@rules_proto_grpc//java:defs.bzl", "java_grpc_compile")
+
+java_grpc_compile(
+    name = "java",
+    prefix_path = "gen",
+    protos = [
+        ":common_proto",
+        ":user_proto",
+    ],
+)
