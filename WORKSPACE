@@ -24,3 +24,6 @@ yarn_install(
     package_json = "//codegen/rules:requirements/package.json",
     yarn_lock = "//codegen/rules:requirements/yarn.lock",
 )
+
+load("@rules_proto_grpc//java:repositories.bzl", rules_proto_grpc_java_repos = "java_repos")
+rules_proto_grpc_java_repos()
